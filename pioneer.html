@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pioneer-Bank </title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
+
 <body>
-    <h1 class="text-center"> Welcome To Pioneer-Bank </h1>
+    <!-- login-part -->
+    <div id="login-area">
+        <h1 class="text-title"> Welcome To <span class="bank-name-color">Pioneer-Bank</span> </h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <input class="form-control mt-3 " type="email" name="" id="" placeholder="Email"><br>
+            <input class="form-control " type="Password" name="" id="" placeholder="password">
+            <button id='login' class="mt-3 btn btn-success"> Enter </button>
+        </div>
+    </div>
+    <!-- transaction-part -->
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="Deposit status">
+                    <h5>Deposit</h5>
+                    <h2> $ <span id="curentAmount">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ 00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Balance status">
+                    <h5>Balance</h5>
+                    <h2>$ 1240</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h6>Deposit</h6>
+                    <input id="depositAmount" class="form-control" type="text" name="" id="" placeholder="$ amount you went to Deposit">
+                    <button id="depositButton" class=" mt-3 btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h6>Withdraw</h6>
+                    <input class="form-control" type="text" name="" id="" placeholder="$ amount you went to Withdraw">
+                    <button class=" mt-3 btn btn-success">Withdraw</button> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <script src="js/pioneer-login.js"></script>
 </body>
+
 </html>
